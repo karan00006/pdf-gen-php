@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @page {
+            margin: 35px;
+        }
+
+        body {
+            font-family: DejaVu Sans, sans-serif;
+            color: #222;
+            font-size: 12px;
+        }
+
+        h1 {
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+
+        .muted {
+            color: #666;
+        }
+
+        .details {
+            margin: 25px 0;
+            line-height: 1.8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #2563eb;
+            color: white;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 45px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>INVOICE</h1>
+            <p class="muted">Your Company Name</p>
+
+            <div class="details">
+                <strong>Name:</strong> ' .$name . '<br>
+                <strong>Email:</strong> ' . $email . '<br>
+                <strong>Subject:</strong> ' . $subject . '<br>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Subject</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    ' . 12 . '
+                </tbody>
+            </table>
+
+            <div class="total">
+                Grand Total: PKR ' . 123 . '
+            </div>
+
+            <div class="footer">
+                Thank you for your business!
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

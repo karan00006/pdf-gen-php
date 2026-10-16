@@ -1,0 +1,126 @@
+body {
+    min-height: 100vh;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.header {
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    color: #fff;
+}
+
+.header__title {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.ports-card {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.ports-card code {
+    color: #334155;
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+#portsTable {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#portsTable thead th {
+    padding: 1rem;
+    border: 0;
+    background: #0f3d73;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+}
+
+#portsTable thead th:first-child {
+    border-top-left-radius: 0.5rem;
+}
+
+#portsTable thead th:last-child {
+    border-top-right-radius: 0.5rem;
+}
+
+#portsTable tbody td {
+    padding: 1rem;
+    border-color: #e2e8f0;
+}
+
+#portsTable tbody tr:hover > * {
+    background-color: #eff6ff;
+}
+
+#portsTable a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+#portsTable a:hover {
+    text-decoration: underline;
+}
+
+div.dataTables_wrapper div.dataTables_filter,
+div.dataTables_wrapper div.dataTables_length {
+    margin-bottom: 1rem;
+}
+
+div.dataTables_wrapper div.dataTables_filter input,
+div.dataTables_wrapper div.dataTables_length select {
+    border: 1px solid #cbd5e1;
+    border-radius: 0.45rem;
+    padding: 0.4rem 0.65rem;
+    outline: 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter input:focus,
+div.dataTables_wrapper div.dataTables_length select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgb(13 110 253 / 15%);
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    color: #64748b;
+    padding-top: 1.25rem;
+}
+
+div.dataTables_wrapper .pagination {
+    gap: 0.25rem;
+    padding-top: 0.75rem;
+}
+
+div.dataTables_wrapper .page-link {
+    border: 0;
+    border-radius: 0.4rem !important;
+    color: #0f3d73;
+}
+
+div.dataTables_wrapper .page-item.active .page-link {
+    background-color: #0f3d73;
+}
+
+div.dataTables_wrapper .page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgb(13 110 253 / 15%);
+}
+
+@media (max-width: 576px) {
+    .list-section {
+        padding-top: 1.5rem !important;
+    }
+
+    .card-body {
+        padding: 1rem !important;
+    }
+
+    #portsTable thead th,
+    #portsTable tbody td {
+        padding: 0.75rem;
+    }
+}
